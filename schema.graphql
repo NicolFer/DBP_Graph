@@ -1,0 +1,11 @@
+# schema.graphql
+type Dessert {
+  id: ID!
+  name: String!
+  description: String!
+}
+
+type Query {
+  desserts: [Dessert]
+  dessert(id: ID!): Dessert
+}
